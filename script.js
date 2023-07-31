@@ -8,13 +8,17 @@ let d100arr = [];
 
 for (let i = 1; i <= 100; i++){
     d100arr.push(i);
+} 
+
+
+let playerSelection = prompt("Enter Flip/3/4/6/8/10/20/100 to roll a die with that many sides \nor flip a coin!");
+
+playerSelection = playerSelection.toLowerCase();
+
+function dieRoll() {
+    if (playerSelection == "flip"){
+        return coinFlip[(Math.floor(Math.random() * coinFlip.length))];
+    }
+    alert("Your result is" + dieRoll());
 }
-
-
-
-button.addEventListener("click", roll4());
-    function roll4() {
-        alert(d4arr[(Math.floor(Math.random()* d4arr.length))]);
-};
-
 
