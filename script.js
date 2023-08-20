@@ -19,6 +19,41 @@ function dieRoll() {
     if (playerSelection == "flip"){
         return coinFlip[(Math.floor(Math.random() * coinFlip.length))];
     }
-    alert("Your result is" + dieRoll());
+
+    else if (playerSelection == "3"){
+        return coinFlip[(Math.floor(Math.random() * d4arr.length))];
+    }
+
+    else if (playerSelection == "4"){
+        return d4arr[(Math.floor(Math.random() * d4arr.length))];
+    }
+
+    else if(playerSelection == "6"){
+        return d6arr[(Math.floor(Math.random() * d6arr.length))];
+
+    }
+
+    else if(playerSelection == "8"){
+        return d8arr[(Math.floor(Math.random() * d8arr.length))];
+
+    }
+    
+    else if(playerSelection == "10"){
+        return d10arr[(Math.floor(Math.random() * d10arr.length))];
+
+    }
+
+    else if(playerSelection == "20"){
+        return d20arr[(Math.floor(Math.random() * d20arr.length))];
+
+    }
+
+    else if (playerSelection == "100"){
+        return d100arr[(Math.floor(Math.random() * d100arr.length))];
+
+    }
+
 }
+
+alert("Your result is " + dieRoll() + " refresh the page to roll again!");
 
